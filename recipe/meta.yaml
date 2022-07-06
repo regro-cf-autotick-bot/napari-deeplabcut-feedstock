@@ -27,7 +27,9 @@ requirements:
     - python >=3.8
     - qtpy
     - ruamel.yaml
+    - scikit-image
     - pytables
+    - pyyaml
 
 test:
   imports:
