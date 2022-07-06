@@ -26,9 +26,9 @@ requirements:
     - pandas
     - python >=3.8
     - qtpy
-    - ruamel.yaml
+    # - ruamel.yaml  # Listed upstream but not used anywhere in code
     - scikit-image
-    - pytables
+    # - pytables  # Listed upstream but not used anywhere in code
     - pyyaml
 
 test:
