@@ -36,7 +36,7 @@ test:
     - napari_deeplabcut
   commands:
     - pip list
-    - pip check
+    # - pip check  # Can be uncommented when upstream requirements are updated/corrected
   requires:
     - pip
 
