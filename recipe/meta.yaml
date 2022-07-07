@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -26,9 +26,8 @@ requirements:
     - pandas
     - python >=3.8
     - qtpy
-    # - ruamel.yaml  # Listed upstream but not used anywhere in code
     - scikit-image
-    # - pytables  # Listed upstream but not used anywhere in code
+    - pytables
     - pyyaml
 
 test:
