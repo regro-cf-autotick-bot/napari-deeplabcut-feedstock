@@ -1,5 +1,5 @@
 {% set name = "napari-deeplabcut" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari_deeplabcut-{{ version }}.tar.gz
-  sha256: 294e2c69bf8ef5d4567c414281c20c1a8d2c1f0473e7eb8f076448cedb51c0c4
+  sha256: 22a25559f67881d4322be329bd9f8bd3f2dad3d30f514da13d68217d6c3b9aeb
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -20,9 +20,11 @@ requirements:
     - python >=3.8
     - setuptools-scm
   run:
+    - dask-core
     - dask-image
     - napari <0.5.0
     - numpy
+    - opencv
     - pandas
     - python >=3.8
     - qtpy
