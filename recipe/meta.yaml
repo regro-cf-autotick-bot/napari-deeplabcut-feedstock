@@ -20,6 +20,7 @@ requirements:
     - python >=3.8
     - setuptools-scm
   run:
+    - dask-core
     - dask-image
     - napari <0.5.0
     - numpy
