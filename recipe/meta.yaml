@@ -23,6 +23,7 @@ requirements:
     - dask-image
     - napari <0.5.0
     - numpy
+    - opencv
     - pandas
     - python >=3.8
     - qtpy
