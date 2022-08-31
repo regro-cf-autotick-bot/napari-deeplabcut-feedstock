@@ -145,4 +145,5 @@ Feedstock Maintainers
 
 * [@goanpeca](https://github.com/goanpeca/)
 * [@jaimergp](https://github.com/jaimergp/)
+* [@jeylau](https://github.com/jeylau/)
 
