@@ -1,11 +1,11 @@
-About napari-deeplabcut
-=======================
+About napari-deeplabcut-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-deeplabcut-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/DeepLabCut/napari-deeplabcut
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-deeplabcut-feedstock/blob/main/LICENSE.txt)
 
 Summary: napari + DeepLabCut annotation tool
 
