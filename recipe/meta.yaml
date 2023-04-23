@@ -23,6 +23,7 @@ requirements:
     - dask-core
     - dask-image
     - napari <0.5.0
+    - natsort
     - numpy
     - opencv
     - pandas
