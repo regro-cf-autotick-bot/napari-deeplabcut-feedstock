@@ -27,26 +27,28 @@ requirements:
     - numpy
     - opencv
     - pandas
+    - pytables
     - python >=3.8
+    - pyyaml
     - qtpy
     - scikit-image
-    - pytables
-    - pyyaml
+    - vispy
 
 test:
   imports:
     - napari_deeplabcut
   commands:
     - pip list
-    # - pip check  # Can be uncommented when upstream requirements are updated/corrected
+    - pip check  # Can be uncommented when upstream requirements are updated/corrected
   requires:
     - pip
 
 about:
-  home: https://github.com/DeepLabCut/napari-deeplabcut
+  home: https://pypi.org/project/napari-deeplabcut/
   summary: napari + DeepLabCut annotation tool
   license: BSD-3-Clause
   license_file: LICENSE
+  dev_url: https://github.com/DeepLabCut/napari-deeplabcut
 
 extra:
   recipe-maintainers:
