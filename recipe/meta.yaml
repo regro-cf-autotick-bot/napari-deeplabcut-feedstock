@@ -1,5 +1,5 @@
 {% set name = "napari-deeplabcut" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari_deeplabcut-{{ version }}.tar.gz
-  sha256: b37776b4eef21a4d4a3db8b03eef07852ad649eed452232be23d6df05ff0809e
+  sha256: a3f5179353d00336ea10258195074aaec5c90b576e4d5891fbed46b92a4b5b3d
 
 build:
   noarch: python
