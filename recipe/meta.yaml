@@ -22,7 +22,7 @@ requirements:
   run:
     - dask-core
     - dask-image
-    - matplotlib-core >=3.3
+    - matplotlib-base >=3.3
     - napari <0.5.0
     - natsort
     - numpy
