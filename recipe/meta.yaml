@@ -28,11 +28,11 @@ requirements:
     - numpy
     - opencv
     - pandas
+    - pytables
     - python >=3.8
+    - pyyaml
     - qtpy >=2.4
     - scikit-image
-    - pytables
-    - pyyaml
 
 test:
   imports:
