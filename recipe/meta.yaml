@@ -20,7 +20,7 @@ requirements:
     - python >=3.8
     - setuptools-scm
   run:
-    - dask-core
+    - dask-core              #  Imported but not listed as requirement
     - dask-image
     - matplotlib-base >=3.3
     - napari <0.5.0
@@ -28,7 +28,7 @@ requirements:
     - numpy
     - opencv
     - pandas
-    - pytables
+    - pytables               # Listed as requirement but not imported
     - python >=3.8
     - pyyaml
     - qtpy >=2.4
