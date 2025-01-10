@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari_deeplabcut-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari_deeplabcut-{{ version }}.tar.gz
   sha256: 2e60afe92e995b64136a667c17b040157885162da4a17c505ba8792661842aae
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools-scm
   run:
     - dask-core              #  Imported but not listed as requirement
@@ -29,7 +29,7 @@ requirements:
     - opencv
     - pandas
     - pytables               # Listed as requirement but not imported
-    - python >=3.9
+    - python >={{ python_min }}
     - pyyaml
     - qtpy >=2.4
     - scikit-image
@@ -43,6 +43,7 @@ test:
     # - pip check  # Can be uncommented when upstream requirements are updated/corrected
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/napari-deeplabcut
